@@ -1,0 +1,54 @@
+
+echo "
+Code Explanation :
+In Exercise 1 , We want to use a C file to execute  the fork() system call in
+order to Create a child process from an already existing parent process . The
+child process has the same properties as its parent process. By importing a
+library for process id stuff <unistd.h> and make a pid variable that uses the
+fork system call .After that , we check in an If condition : if pid =0 then
+we print that it is a child process and its id , if pid >0 then we print its 
+a parent process and its id . If none of those condition are met then this 
+means the fork call likely failed , so we print Fork failed . 
+
+Once the file code is done we simply use gcc on the created file in order to
+Compile like this : gcc fork.c -o fork . "-o" makes the result of compilation
+go into one singular file for execution . Now we execute the code by
+executing the new file by calling it like this : ./fork
+
+In Exercise 2 we show to create background process directly through the terminal
+Since the results of these commands cannot be displayed in a makefile , 
+Screenshots will be there to showcase the commands when they run .
+To create a background process , we use sleep and & to create a process like
+this : sleep 200 & . This will create a process and show its id .When we want
+to show our current processes , we use jobs to show our created processes.
+
+In Exercise 3 , We want to try and kill our process .
+If you forgot the process id , type ps aux | grep sleep will display the ids.
+You can also still use jobs for that dont forget.
+To stop a process , simply use kill <ProcessID> . Make sure to type an actual
+process ID after the kill command .
+You can verify by using jobs or the ps aux | grep sleep.
+ 
+In Exercise 4 , we want to stop and resume our process , not kill it entirly.
+To stop a process , we use kill -STOP <ProcessID> .
+To resume , we use kill -CONT <ProcessID>.
+Reminder to check their states using jobs .
+
+In Exercise 5 , We want show the role of a linker by using it to link two
+C files together and compile them into one single file for execution.
+The first file (cfile1.c) contains a simple hello function that echos "Hello
+from file 1" .The second file (cfile2.c) defines and calles the hello() 
+funtion that is supposed to exist in cfile1.c . Once you create both files ,
+simply use gcc cfile1.c cfile2.c -o linker to link both files and compile 
+them into a new file that is called linker .
+Now we can execute this by calling ./linker , which will execute both codes ,
+allowing the hello() call from cfile2.c to reach the function in cfile1.c
+
+Finally In Exercise 6 , we want to show the role of the loader .
+Normally you load certain stuff like <stdio.h> for input for example in the 
+code . This allows you to use whatever the loaded libraries allow for you.
+By creating a simple file that uses <stdio.h> to print a simple message and 
+compiling it with gcc loader.c -o loader , we can use a simple command to
+show the libraries that the code uses through ldd ./loader .
+
+";

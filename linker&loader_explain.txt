@@ -1,0 +1,7 @@
+Normally you have programs that contain source code writted in a language 
+C , java , etc.. . This source code is then passed to a translator(compiler)
+to turn into object codes to 0s and 1s . Once its turned to 0s and 1s the 
+Linker collects the object codes so it can turn it into one executable file.
+The loader load this  executable file and any libraries that it may need 
+to work like <stdio.h> into memory . Loading into memory allows the loaded file
+loaded to be a process that works on the RAM and start working in a normal way. 
