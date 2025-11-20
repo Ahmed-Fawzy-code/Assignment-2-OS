@@ -1,4 +1,4 @@
-#ASSIGNMENT 2
+# ASSIGNMENT 2
 
 This is the README for assignment 2 , with almost everything you might need.
 
@@ -9,7 +9,7 @@ markup files.
 To install gcc , use : sudo apt install gcc
 To install mark , use : sudo apt install mark 
 
-##How to view the Assignment contents
+## How to view the Assignment contents
 
 To run diffrent parts of the assigment :
 	fork section : run this command "mark fork"
@@ -21,9 +21,9 @@ To run diffrent parts of the assigment :
 That should be all the assignment contents .
 Dont forget to check out the screenshots that contain stuff like the commands , expected results , etc.. 
 
-##Contributing
+## Contributing
 
 You cant really contribute unless you are specificly TA who gave this assignment , in which case.. can i have less of these ?
 
-##License 
+## License 
 [MIT](https://choosealicense.com/licenses/mit/)
